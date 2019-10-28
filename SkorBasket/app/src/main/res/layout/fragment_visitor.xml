@@ -3,6 +3,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="@drawable/persebaya"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	tools:context=".fragments.VisitorFragment">
 
@@ -15,7 +16,9 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="0"
-			android:textSize="50sp"
+			android:fontFamily="sans-serif-black"
+			android:textColor="@color/colorAccent"
+			android:textSize="80dp"
 			app:layout_constraintLeft_toLeftOf="parent"
 			app:layout_constraintRight_toRightOf="parent"
 			app:layout_constraintTop_toTopOf="parent"
@@ -24,13 +27,30 @@
 		<TextView
 			android:id="@+id/visitorTeamText"
 			android:text="Visitor Team"
+			android:layout_marginTop="10dp"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
+			android:textColor="@color/white"
 			app:layout_constraintTop_toTopOf="parent"
 			app:layout_constraintLeft_toLeftOf="parent"
 			app:layout_constraintRight_toRightOf="parent"
-			android:textSize="30sp"
+			android:textSize="25dp"
+			android:fontFamily="sans-serif-black"
 			/>
+
+		<TextView
+			android:id="@+id/ClubTeamText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="sans-serif-condensed-light"
+			android:layout_marginTop="0dp"
+			android:text="Persebaya FC"
+			android:textColor="@color/white"
+			android:textSize="25dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/visitorTeamText" />
+
 
 		<Button
 			android:id="@+id/scoreSatuVisitor"
